@@ -7,10 +7,8 @@ import Slider from "react-slick";
 import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 
-interface WorkExperienceProps {}
-
-const WorkExperience: React.FC<WorkExperienceProps> = () => {
-  const sliderRef = useRef();
+const WorkExperience: React.FC = () => {
+  const sliderRef = useRef<Slider>(null);
 
   const settings = {
     dots: false,
@@ -25,11 +23,11 @@ const WorkExperience: React.FC<WorkExperienceProps> = () => {
   };
 
   const slideRight = () => {
-    sliderRef.current.slickNext();
+    sliderRef.current?.slickNext();
   };
 
   const slideLeft = () => {
-    sliderRef.current.slickPrev();
+    sliderRef.current?.slickPrev();
   };
 
   return (

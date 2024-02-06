@@ -1,9 +1,13 @@
 import "./SkillsInfoCard.css";
 import React from "react";
 
+type SkillsProps = {
+  skill: string;
+  percentage: string;
+};
 interface SkillInfoCardProps {
   heading: string;
-  skills: string;
+  skills: SkillsProps[];
 }
 
 const SkillsInfoCard: React.FC<SkillInfoCardProps> = ({ heading, skills }) => {

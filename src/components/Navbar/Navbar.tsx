@@ -52,8 +52,6 @@ const Navbar: React.FC = () => {
           <button type="button" className="menu-btn" onClick={toggleMenu}>
             {isOpenMenu ? <CloseOutlinedIcon /> : <MenuOutlinedIcon />}
           </button>
-
-          {/*onClick={() => {}} */}
         </div>
       </nav>
     </>

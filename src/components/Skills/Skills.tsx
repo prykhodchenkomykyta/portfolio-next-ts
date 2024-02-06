@@ -5,10 +5,16 @@ import { SKILLS } from "@/utils/data";
 import SkillsInfoCard from "./SkillsInfoCard/SkillsInfoCard";
 import { useState } from "react";
 
-const Skills = () => {
-  const [selectedSkill, setSelectedSkill] = useState(SKILLS[0]);
+type SkillsProps = {
+  title: string;
+  icon: string;
+  skills: { skill: string; percentage: string }[];
+};
 
-  const handleSelectSkill = (data) => {
+const Skills = () => {
+  const [selectedSkill, setSelectedSkill] = useState<SkillsProps>(SKILLS[0]);
+
+  const handleSelectSkill = (data: SkillsProps) => {
     setSelectedSkill(data);
   };
 

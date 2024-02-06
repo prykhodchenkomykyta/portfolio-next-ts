@@ -1,6 +1,13 @@
 import "./ExperienceCard.css";
 
-const ExperienceCard: React.FC = ({ details }) => {
+interface ExperienceDetails {
+  title: string;
+  date: string;
+  responsibilities: string[];
+}
+const ExperienceCard: React.FC<{ details: ExperienceDetails }> = ({
+  details,
+}) => {
   return (
     <div className="work-experience-card">
       <h6>{details.title}</h6>
