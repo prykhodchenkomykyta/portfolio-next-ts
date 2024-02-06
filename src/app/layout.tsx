@@ -5,8 +5,17 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Targetologist",
+  title: "Oximets Targetologist",
   description: "Portfolio",
+  icons: {
+    icon: [
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "/images/favicon.ico",
+        href: "/images/favicon.ico",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
