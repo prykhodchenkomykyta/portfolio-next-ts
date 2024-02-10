@@ -38,7 +38,7 @@ export const SKILLS = [
   },
 ];
 
-export const WORK_EXPERIENCE = [
+export const REVIEWS = [
   {
     title: "Перша посада",
     date: "З - До",

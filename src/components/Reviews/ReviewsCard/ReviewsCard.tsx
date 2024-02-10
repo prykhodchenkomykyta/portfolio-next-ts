@@ -1,15 +1,13 @@
-import "./ExperienceCard.css";
+import "./ReviewsCard.css";
 
-interface ExperienceDetails {
+interface ReviewsDetails {
   title: string;
   date: string;
   responsibilities: string[];
 }
-const ExperienceCard: React.FC<{ details: ExperienceDetails }> = ({
-  details,
-}) => {
+const ReviewsCard: React.FC<{ details: ReviewsDetails }> = ({ details }) => {
   return (
-    <div className="work-experience-card">
+    <div className="reviews-card">
       <h6>{details.title}</h6>
       <div className="work-duration">{details.date}</div>
 
@@ -22,4 +20,4 @@ const ExperienceCard: React.FC<{ details: ExperienceDetails }> = ({
   );
 };
 
-export default ExperienceCard;
+export default ReviewsCard;

@@ -3,7 +3,7 @@ import "./main.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Hero from "@/components/Hero/Hero";
 import Skills from "@/components/Skills/Skills";
-import WorkExperience from "@/components/WorkExperience/WorkExperience";
+import Reviews from "@/components/Reviews/Reviews";
 import ContactMe from "@/components/ContactMe/ContactMe";
 import Footer from "@/components/Footer/Footer";
 import "slick-carousel/slick/slick.css";
@@ -16,7 +16,7 @@ export default function Home() {
       <div className="container">
         <Hero />
         <Skills />
-        <WorkExperience />
+        <Reviews />
         <ContactMe />
       </div>
       <Footer />

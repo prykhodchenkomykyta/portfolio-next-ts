@@ -1,13 +1,13 @@
 "use client";
 import React, { useRef } from "react";
-import "./WorkExperience.css";
-import { WORK_EXPERIENCE } from "@/utils/data";
-import ExperienceCard from "./ExperienceCard/ExperienceCard";
+import "./Reviews.css";
+import { REVIEWS } from "@/utils/data";
+import ReviewsCard from "./ReviewsCard/ReviewsCard";
 import Slider from "react-slick";
 import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 
-const WorkExperience: React.FC = () => {
+const Reviews: React.FC = () => {
   const sliderRef = useRef<Slider>(null);
 
   const settings = {
@@ -31,7 +31,7 @@ const WorkExperience: React.FC = () => {
   };
 
   return (
-    <section id="work-experience" className="experience-container">
+    <section id="reviews" className="experience-container">
       <h5>Work Experience</h5>
 
       <div className="experience-content">
@@ -43,8 +43,8 @@ const WorkExperience: React.FC = () => {
         </div>
 
         <Slider ref={sliderRef} {...settings}>
-          {WORK_EXPERIENCE.map((item) => (
-            <ExperienceCard key={item.title} details={item} />
+          {REVIEWS.map((item) => (
+            <ReviewsCard key={item.title} details={item} />
           ))}
         </Slider>
       </div>
@@ -52,4 +52,4 @@ const WorkExperience: React.FC = () => {
   );
 };
 
-export default WorkExperience;
+export default Reviews;

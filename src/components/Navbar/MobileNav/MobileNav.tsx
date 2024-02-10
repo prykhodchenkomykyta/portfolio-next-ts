@@ -27,7 +27,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen, toggleMenu }) => {
           <ul>
             <li>
               <Link href="#home" className="menu-item">
-                Home
+                Головна
               </Link>
             </li>
             <li>
@@ -36,13 +36,13 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen, toggleMenu }) => {
               </Link>
             </li>
             <li>
-              <Link href="#work-experiencee" className="menu-item">
-                Work Experience
+              <Link href="#reviews" className="menu-item">
+                Відгуки
               </Link>
             </li>
             <li>
               <Link href="#contact-me" className="menu-item">
-                Contact Me
+                Зв'язатися зі мною
               </Link>
             </li>
           </ul>

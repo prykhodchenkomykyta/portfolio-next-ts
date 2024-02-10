@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
           <ul>
             <li>
               <Link href="#home" className="menu-item">
-                Home
+                Головна
               </Link>
             </li>
             <li>
@@ -38,13 +38,13 @@ const Navbar: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link href="#work-experience" className="menu-item">
-                Work Experience
+              <Link href="#reviews" className="menu-item">
+                Відгуки
               </Link>
             </li>
             <li>
               <Link href="#contact-me" className="menu-item">
-                Contact Me
+                Зв'язатися зі мною
               </Link>
             </li>
             <button className="contact-btn">Hire Me</button>

@@ -5,12 +5,11 @@ const Hero: React.FC = () => {
   return (
     <section id="home" className="hero-container">
       <div className="hero-content">
-        <h2>Bogdan Gosling</h2>
+        <h2>Богдан Оксимець</h2>
         <p>
-          Targetologist specialist who adjusts advertising in social networks |
-          Increase the sales of products or services, attract the attention of
-          users, and convince them that the offer is extremely beneficial for
-          them
+          Налаштую рекламу в соціальних мережах та пошукових сервісах | Допоможу
+          налаштувати діджитал рекламу та отримати стабільний потік клієнтів до
+          вашого бізнесу
         </p>
       </div>
 
@@ -20,15 +19,16 @@ const Hero: React.FC = () => {
             <Image
               width={500}
               height={500}
-              alt="Target Image"
+              alt="Instagram Icon"
               src="/assets/instagram-icon.png"
             ></Image>
           </div>
           <Image
-            width={300}
-            height={300}
-            alt="Target Image"
-            src="/assets/rayan-gosling.jpg"
+            width={500}
+            height={500}
+            style={{ width: "30rem", height: "25rem" }}
+            alt="Avatar"
+            src="/assets/hero.jpg"
           ></Image>
         </div>
 
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
             <Image
               width={500}
               height={500}
-              alt="Target Image"
+              alt="Facebook Icon"
               src="/assets/facebook-icon.png"
             ></Image>
           </div>
@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
             <Image
               width={500}
               height={500}
-              alt="Target Image"
+              alt="Telegram Icon"
               src="/assets/telegram-icon.png"
             ></Image>
           </div>
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
             <Image
               width={500}
               height={500}
-              alt="Target Image"
+              alt="X Icon"
               src="/assets/x-icon.png"
             ></Image>
           </div>
