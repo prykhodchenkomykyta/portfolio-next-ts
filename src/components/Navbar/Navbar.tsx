@@ -83,27 +83,15 @@ const Navbar: React.FC = () => {
                 Відгуки
               </ScrollLink>
             </li>
-            <li>
-              <ScrollLink
-                to="contact-me"
-                className="menu-item"
-                spy={true}
-                smooth={true}
-                offset={-120}
-                duration={500}
-              >
-                Зв&apos;язатися зі мною
-              </ScrollLink>
-            </li>
             <ScrollLink
-              to="get-consult"
+              to="contact-me"
               className="contact-btn"
               spy={true}
               smooth={true}
               offset={-120}
               duration={500}
             >
-              Отримати консультацію
+              Зв&apos;язатися зі мною
             </ScrollLink>
           </ul>
           <button type="button" className="menu-btn" onClick={toggleMenu}>
