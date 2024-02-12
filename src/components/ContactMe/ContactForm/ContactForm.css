@@ -17,7 +17,7 @@ form input, form textarea {
   width: 100%;
   font-size: 0.9rem;
   color: #fff;
-  background: #130f2a;
+  background: rgba(44, 82, 163, 0.851);
   border-radius: 0.6rem;
   border: 1.5px solid #6751b9;
   padding: 1rem;
@@ -29,7 +29,7 @@ form button {
   color: #fff;
   border: 1.5px solid #a892fe;
   border-radius: 0.6rem;
-  background: linear-gradient(90deg, #a892fe 0%, #8064e8 100%);
+  background: linear-gradient(90deg, rgba(39, 72, 144, 0.851) 0%, rgba(44, 82, 163, 0.851) 100%);
   padding: 0.7rem;
   transition: all 0.3s ease;
   cursor: pointer;

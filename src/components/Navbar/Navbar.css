@@ -46,7 +46,7 @@
   content: " ";
   width: 2rem;
   height: 0.2rem;
-  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  background: linear-gradient(90deg, #20A4F3 0%, #182B3A 100%);
   border-radius: 0.5rem;
   position: absolute;
   bottom: -0.6rem;
@@ -68,7 +68,7 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  background: linear-gradient(90deg, rgba(39, 72, 144, 0.851) -0%, rgba(44, 82, 163, 0.851) 100%);
   padding: 0.6rem 2rem;
   border: none;
   outline: 1.5px solid transparent;
@@ -93,8 +93,8 @@
   border: none;
   border-radius: 0.4rem;
   color: #fff;
-  background: linear-gradient(90deg, #a993fe -0.13%, #7e61e7 99.87%);
-  line-height: 0;
+  background: linear-gradient(90deg, rgba(39, 72, 144, 0.851) -0.13%, rgba(44, 82, 163, 0.851) 99.87%);
+  line-height: 0; 
   cursor: pointer;
   transition: all 0.4s ease;
   display: none;

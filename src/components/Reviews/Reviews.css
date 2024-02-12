@@ -15,8 +15,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #6751b9;
-  background: #130f2a;
+  color: rgba(44, 82, 163, 0.851);
+  background: rgba(39, 72, 144, 0.851);
   position: absolute;
   top: 55%;
   z-index: 2;
