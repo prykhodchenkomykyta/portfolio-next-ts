@@ -19,17 +19,17 @@ const Hero: React.FC = () => {
             <Image
               width={500}
               height={500}
-              alt="Instagram Icon"
-              src="/assets/instagram-icon.png"
-            ></Image>
+              alt="Facebook Icon"
+              src="/assets/facebook-icon.png"
+            />
           </div>
           <Image
             width={500}
-            height={400}
+            height={500}
             alt="Avatar"
-            style={{ borderRadius: "10px" }}
+            style={{ borderRadius: "10px", width: "25rem", height: "auto" }}
             src="/assets/hero.jpg"
-          ></Image>
+          />
         </div>
 
         <div>
@@ -37,9 +37,9 @@ const Hero: React.FC = () => {
             <Image
               width={500}
               height={500}
-              alt="Facebook Icon"
-              src="/assets/facebook-icon.png"
-            ></Image>
+              alt="Instagram Icon"
+              src="/assets/instagram-icon.png"
+            />
           </div>
           <div className="tech-icon">
             <Image
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
               height={500}
               alt="Telegram Icon"
               src="/assets/telegram-icon.png"
-            ></Image>
+            />
           </div>
           <div className="tech-icon">
             <Image
@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
               height={500}
               alt="X Icon"
               src="/assets/x-icon.png"
-            ></Image>
+            />
           </div>
         </div>
       </div>

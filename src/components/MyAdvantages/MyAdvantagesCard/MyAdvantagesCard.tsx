@@ -1,14 +1,14 @@
 import Image from "next/image";
-import "./SkillCard.css";
+import "./MyAdvantagesCard.css";
 
-interface SkillCardProps {
+interface MyAdvantagesCardProps {
   title: string;
   iconUrl: string;
   isActive: boolean;
   onClick: () => void;
 }
 
-const SkillCard: React.FC<SkillCardProps> = ({
+const MyAdvantagesCard: React.FC<MyAdvantagesCardProps> = ({
   title,
   iconUrl,
   isActive,
@@ -16,10 +16,10 @@ const SkillCard: React.FC<SkillCardProps> = ({
 }) => {
   return (
     <div
-      className={`skills-card ${isActive ? "active" : ""}`}
+      className={`my-advantages-card ${isActive ? "active" : ""}`}
       onClick={onClick}
     >
-      <div className="skill-icon">
+      <div className="advantages-icon">
         <Image width={500} height={500} alt={title} src={iconUrl} />
       </div>
 
@@ -28,4 +28,4 @@ const SkillCard: React.FC<SkillCardProps> = ({
   );
 };
 
-export default SkillCard;
+export default MyAdvantagesCard;

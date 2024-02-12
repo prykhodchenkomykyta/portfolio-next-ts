@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import "./MobileNav.css";
-import Link from "next/link";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 interface MobileNavProps {
   isOpen: boolean;
@@ -17,8 +17,8 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen, toggleMenu }) => {
       >
         <div className="mobile-menu-container">
           <Image
-            width={0}
-            height={0}
+            width={500}
+            height={500}
             alt="Logo Image"
             src="/assets/oximets-logo-transparent.png"
             className="logo"
@@ -26,25 +26,75 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen, toggleMenu }) => {
 
           <ul>
             <li>
-              <Link href="#home" className="menu-item">
+              <ScrollLink
+                to="home"
+                className="menu-item"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 Головна
-              </Link>
+              </ScrollLink>
             </li>
             <li>
-              <Link href="#skills" className="menu-item">
-                Skills
-              </Link>
+              <ScrollLink
+                to="skills"
+                className="menu-item"
+                spy={true}
+                smooth={true}
+                offset={-120}
+                duration={500}
+              >
+                Мої навички
+              </ScrollLink>
             </li>
             <li>
-              <Link href="#reviews" className="menu-item">
+              <ScrollLink
+                to="my-advantages"
+                className="menu-item"
+                spy={true}
+                smooth={true}
+                offset={-120}
+                duration={500}
+              >
+                Чому варто працювати зі мною?
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink
+                to="reviews"
+                className="menu-item"
+                spy={true}
+                smooth={true}
+                offset={-120}
+                duration={500}
+              >
                 Відгуки
-              </Link>
+              </ScrollLink>
             </li>
             <li>
-              <Link href="#contact-me" className="menu-item">
+              <ScrollLink
+                to="contact-me"
+                className="menu-item"
+                spy={true}
+                smooth={true}
+                offset={-120}
+                duration={500}
+              >
                 Зв'язатися зі мною
-              </Link>
+              </ScrollLink>
             </li>
+            <ScrollLink
+              to="get-consult"
+              className="contact-btn"
+              spy={true}
+              smooth={true}
+              offset={-120}
+              duration={500}
+            >
+              Отримати консультацію
+            </ScrollLink>
           </ul>
         </div>
       </div>

@@ -1,49 +1,95 @@
-"use client";
-import SkillCard from "./SkillCard/SkillCard";
+import Image from "next/image";
 import "./Skills.css";
-import { SKILLS } from "@/utils/data";
-import SkillsInfoCard from "./SkillsInfoCard/SkillsInfoCard";
-import { useState } from "react";
 
-type SkillsProps = {
-  title: string;
-  icon: string;
-  info: string;
-  // skills: { skill: string; percentage: string }[];
-};
-
-const Skills = () => {
-  const [selectedSkill, setSelectedSkill] = useState<SkillsProps>(SKILLS[0]);
-
-  const handleSelectSkill = (data: SkillsProps) => {
-    setSelectedSkill(data);
-  };
-
+const Technologies = () => {
   return (
     <section id="skills" className="skills-container">
-      <h5>Чому варто працювати зі мною?</h5>
+      <h5>Мої навички</h5>
+
       <div className="skills-content">
-        <div className="skills">
-          {SKILLS.map((item) => (
-            <SkillCard
-              key={item.title}
-              iconUrl={item.icon}
-              title={item.title}
-              isActive={selectedSkill.title == item.title}
-              onClick={() => handleSelectSkill(item)}
-            />
-          ))}
-        </div>
-        <div className="skills-info">
-          <SkillsInfoCard
-            heading={selectedSkill.title}
-            // skills={selectedSkill.skills}
-            info={selectedSkill.info}
+        <div className="skills-card">
+          <Image
+            width={500}
+            height={500}
+            style={{ width: "100px", height: "100px", margin: "0 auto" }}
+            alt="HTML Icon"
+            src="/assets/html-icon.png"
           />
+          <p>HTML</p>
+        </div>
+        <div className="skills-card">
+          <Image
+            width={500}
+            height={500}
+            style={{ width: "100px", height: "100px", margin: "0 auto" }}
+            alt="HTML Icon"
+            src="/assets/html-icon.png"
+          />
+          <p>HTML</p>
+        </div>
+        <div className="skills-card">
+          <Image
+            width={500}
+            height={500}
+            style={{ width: "100px", height: "100px", margin: "0 auto" }}
+            alt="HTML Icon"
+            src="/assets/html-icon.png"
+          />
+          <p>HTML</p>
+        </div>
+        <div className="skills-card">
+          <Image
+            width={500}
+            height={500}
+            style={{ width: "100px", height: "100px", margin: "0 auto" }}
+            alt="HTML Icon"
+            src="/assets/html-icon.png"
+          />
+          <p>HTML</p>
+        </div>
+        <div className="skills-card">
+          <Image
+            width={500}
+            height={500}
+            style={{ width: "100px", height: "100px", margin: "0 auto" }}
+            alt="HTML Icon"
+            src="/assets/html-icon.png"
+          />
+          <p>HTML</p>
+        </div>
+        <div className="skills-card">
+          <Image
+            width={500}
+            height={500}
+            style={{ width: "100px", height: "100px", margin: "0 auto" }}
+            alt="HTML Icon"
+            src="/assets/html-icon.png"
+          />
+          <p>HTML</p>
+        </div>
+        <div className="skills-card">
+          <Image
+            width={500}
+            height={500}
+            style={{ width: "100px", height: "100px", margin: "0 auto" }}
+            alt="HTML Icon"
+            src="/assets/html-icon.png"
+          />
+          <p>HTML</p>
+        </div>
+        <div className="skills-card">
+          <Image
+            width={500}
+            height={500}
+            style={{ width: "100px", height: "100px", margin: "0 auto" }}
+            alt="HTML Icon"
+            src="/assets/html-icon.png"
+          />
+          <p>HTML</p>
         </div>
       </div>
     </section>
   );
 };
 
-export default Skills;
+export default Technologies;

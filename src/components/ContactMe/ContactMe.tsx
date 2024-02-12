@@ -15,10 +15,7 @@ const ContactMe: React.FC = () => {
             iconUrl="/assets/email-icon.png"
             text="bogdan.oximets@gmail.com"
           />
-          <ContactInfoCard
-            iconUrl="/assets/instagram-icon.png"
-            text="@bogdan"
-          />
+          <ContactInfoCard iconUrl="/assets/email-icon.png" text="@bogdan" />
         </div>
         <div style={{ flex: 1 }}>
           <ContactForm />

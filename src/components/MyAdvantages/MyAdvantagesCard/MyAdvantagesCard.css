@@ -1,4 +1,4 @@
-.skills-card {
+.my-advantages-card {
   border-radius: 0.65rem;
   border: 1.5px solid #6751b9;
   padding: 2.5rem;
@@ -11,17 +11,17 @@
   transition: all 0.3s ease;
 }
 
-.skills-card:hover,
-.skills-card.active {
+.my-advantages-card:hover,
+.my-advantages-card.active {
   background: linear-gradient(180deg, #aa94fe 0%, #7c5fe6 100%);
 }
 
-.skills-card span {
+.my-advantages-card span {
   font-size: 1.3rem;
   font-weight: 500;
 }
 
-.skill-icon {
+.advantages-icon {
   width: 4rem;
   height: 4rem;
   display: flex;
@@ -35,33 +35,33 @@
   left: -1rem;
 }
 
-.skill-icon img {
+.advantages-icon img {
   width: 2.4rem;
   height: auto;
   object-fit: contain;
 }
 
 @media (max-width: 1025px) {
-  .skills-card {
+  .my-advantages-card {
     padding: 2rem;
   }
 
-  .skills-card span {
+  .my-advantages-card span {
     font-size: 1rem;
   }
 
-  .skill-icon {
+  .advantages-icon {
     width: 3rem;
     height: 3rem;
   }
 
-  .skill-icon img {
+  .advantages-icon img {
     width: 1.8rem;
   }
 }
 
 @media (max-width: 768px) {
-    .skills-card span {
+    .my-advantages-card span {
         font-size: 0.9rem;
       }
 }

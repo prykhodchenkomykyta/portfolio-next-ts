@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import "./Navbar.css";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import { useState } from "react";
 import MobileNav from "./MobileNav/MobileNav";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const Navbar: React.FC = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -14,40 +14,97 @@ const Navbar: React.FC = () => {
     setIsOpenMenu(!isOpenMenu);
   };
 
+  const goToLink = (targetElement: any) => {
+    scroll.scrollTo(targetElement, {
+      duration: 500,
+      offset: -70,
+      smooth: "easeInOutQuad",
+    });
+  };
+
   return (
     <>
       <MobileNav isOpen={isOpenMenu} toggleMenu={toggleMenu} />
       <nav className="nav-wrapper">
         <div className="nav-content">
           <Image
-            width={1500}
-            height={212}
+            width={500}
+            height={500}
             className="logo"
             src="/assets/oximets-logo-transparent.png"
             alt="Logo Image"
           />
           <ul>
             <li>
-              <Link href="#home" className="menu-item">
+              <ScrollLink
+                to="home"
+                className="menu-item"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 Головна
-              </Link>
+              </ScrollLink>
             </li>
             <li>
-              <Link href="#skills" className="menu-item">
-                Skills
-              </Link>
+              <ScrollLink
+                to="skills"
+                className="menu-item"
+                spy={true}
+                smooth={true}
+                offset={-120}
+                duration={500}
+              >
+                Мої навички
+              </ScrollLink>
             </li>
             <li>
-              <Link href="#reviews" className="menu-item">
+              <ScrollLink
+                to="my-advantages"
+                className="menu-item"
+                spy={true}
+                smooth={true}
+                offset={-120}
+                duration={500}
+              >
+                Чому варто працювати зі мною?
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink
+                to="reviews"
+                className="menu-item"
+                spy={true}
+                smooth={true}
+                offset={-120}
+                duration={500}
+              >
                 Відгуки
-              </Link>
+              </ScrollLink>
             </li>
             <li>
-              <Link href="#contact-me" className="menu-item">
+              <ScrollLink
+                to="contact-me"
+                className="menu-item"
+                spy={true}
+                smooth={true}
+                offset={-120}
+                duration={500}
+              >
                 Зв'язатися зі мною
-              </Link>
+              </ScrollLink>
             </li>
-            <button className="contact-btn">Отримати консультацію</button>
+            <ScrollLink
+              to="get-consult"
+              className="contact-btn"
+              spy={true}
+              smooth={true}
+              offset={-120}
+              duration={500}
+            >
+              Отримати консультацію
+            </ScrollLink>
           </ul>
           <button type="button" className="menu-btn" onClick={toggleMenu}>
             {isOpenMenu ? <CloseOutlinedIcon /> : <MenuOutlinedIcon />}

@@ -1,5 +1,4 @@
-import "./SkillsInfoCard.css";
-import React from "react";
+import "./MyAdvantagesInfoCard.css";
 
 // type SkillsProps = {
 //   skill: string;
@@ -9,16 +8,19 @@ import React from "react";
 //   heading: string;
 //   skills: SkillsProps[];
 // }
-interface SkillInfoCardProps {
+interface MyAdvantagesInfoCardProps {
   heading: string;
   info: string;
 }
 
-const SkillsInfoCard: React.FC<SkillInfoCardProps> = ({ heading, info }) => {
+const MyAdvantagesInfoCard: React.FC<MyAdvantagesInfoCardProps> = ({
+  heading,
+  info,
+}) => {
   return (
-    <div className="skills-info-card">
+    <div className="my-advantages-info-card">
       <h6>{heading}</h6>
-      <div className="skills-info-content">
+      <div className="my-advantages-info-content">
         {/* {skills.map((item, index) => (
           <React.Fragment key={`skill_${index}`}>
             <div className="skill-info">
@@ -34,7 +36,7 @@ const SkillsInfoCard: React.FC<SkillInfoCardProps> = ({ heading, info }) => {
             </div>
           </React.Fragment>
         ))} */}
-        <div className="skill-info">
+        <div className="advantages-info">
           <p>{info}</p>
         </div>
       </div>
@@ -42,4 +44,4 @@ const SkillsInfoCard: React.FC<SkillInfoCardProps> = ({ heading, info }) => {
   );
 };
 
-export default SkillsInfoCard;
+export default MyAdvantagesInfoCard;

@@ -1,4 +1,4 @@
-.skills-info-card {
+.my-advantages-info-card {
   min-height: 17.9rem;
   border-radius: 0.65rem;
   border: 1.5px solid #6751b9;
@@ -7,7 +7,7 @@
   backdrop-filter: blur(1rem);
 }
 
-.skills-info-card h6 {
+.my-advantages-info-card h6 {
   font-size: 1.2rem;
   font-weight: 500;
   padding: 0.8rem 2rem;
@@ -18,26 +18,26 @@
   border-bottom: 1.5px solid #6751b9;
 }
 
-.skills-info-content {
+.my-advantages-info-content {
   padding: 2rem;
 }
 
-.skill-info {
+.advantages-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.skill-info p {
+.advantages-info p {
   font-size: 1.3rem;
   font-weight: 500;
 }
 
-.skill-info .percentage {
+.advantages-info .percentage {
   color: #dd8cfa;
 }
 
-.skill-progress-bg {
+.advantages-progress-bg {
   width: 100%;
   height: 0.5rem;
   background: #382e68;
@@ -46,7 +46,7 @@
   overflow: hidden;
 }
 
-.skill-progress {
+.advantages-progress {
   width: 0%;
   height: 0.5rem;
   background: linear-gradient(90deg, #aa94fe -50%, #7d60e6 50%);
@@ -55,15 +55,15 @@
 }
 
 @media (max-width: 1025px) {
-  .skills-info-card h6 {
+  .my-advantages-info-card h6 {
     font-size: 1.1rem;
   }
 
-  .skill-info p {
+  .advantages-info p {
     font-size: 0.9rem;
   }
 
-  .skills-info-content {
+  .my-advantages-info-content {
     padding: 1.5rem;
   }
 }

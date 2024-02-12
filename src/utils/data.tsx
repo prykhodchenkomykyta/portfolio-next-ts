@@ -1,4 +1,4 @@
-export const SKILLS = [
+export const ADVANTAGES = [
   {
     title: "Розробка стратегії",
     icon: "/assets/skill.png",

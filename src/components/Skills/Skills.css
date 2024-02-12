@@ -3,88 +3,76 @@
   position: relative;
 }
 
-.skills-container::after,
-.skills-container::before {
-  content: " ";
-  width: 28rem;
-  height: 28rem;
-  border-radius: 28.125rem;
-  background: #7c66e3;
-  position: absoloute;
-  z-index: -1;
-  filter: blur(200px);
-}
-
-.skills-container::after {
-  top: -3rem;
-  left: -5rem;
-}
-
-.skills-container::before {
-  background: #9e51b9;
-  bottom: 0rem;
-  right: 0rem;
-}
-
 .skills-container h5 {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
 }
 
 .skills-content {
-  display: flex;
-  align-items: flex-start;
-  gap: 3rem;
-}
-
-.skills {
-  flex: 1;
   display: grid;
-  grid-gap: 3rem;
-  grid-template-columns: repeat(2, 1fr);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  width: 100%;
+  text-align: center;
 }
 
-.skills-info {
-  flex: 1;
+.skills-card {
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.skills-card img {
+  transition: all 0.3s ease;
+}
+
+.skills-card>img:hover {
+  transform: translateY(-0.5rem);
+}
+
+.skills-card p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 1025px) {
-  .skills {
-    padding-left: 1rem;
+  .skills-content h2 {
+    font-size: 3rem;
+    line-height: 4;
   }
 
-  .skills,
-  .skills-content {
-    grid-gap: 2rem;
+  .skills-content p {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
   }
 }
 
 @media (max-width: 768px) {
-  .skills-content {
-    flex-direction: column-reverse;
-    gap: 3rem;
+  .skills-container h2 {
+    margin-top: 3rem;
   }
 
-  .skills,
-  .skills-info {
-    width: 100%;
-  }
-
-  .skills-container h5 {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-  }
-
-  .skills-container::after,
-  .skills-container::before {
-    width: 18rem;
-    height: 18rem;
+  .skills-content h2,
+  .skills-content p {
+    width: auto;
+    text-align: center;
   }
 }
 
-@media (max-width: 600px) {
-  .skills-container {
-    padding: 0;
+@media (max-width: 640px) {
+  .skills-content {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+  .skills-content h2 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+
+  .skills-content p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
   }
 }
