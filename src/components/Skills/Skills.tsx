@@ -8,7 +8,8 @@ import { useState } from "react";
 type SkillsProps = {
   title: string;
   icon: string;
-  skills: { skill: string; percentage: string }[];
+  info: string;
+  // skills: { skill: string; percentage: string }[];
 };
 
 const Skills = () => {
@@ -20,7 +21,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="skills-container">
-      <h5>Techical Proficiency</h5>
+      <h5>Чому варто працювати зі мною?</h5>
       <div className="skills-content">
         <div className="skills">
           {SKILLS.map((item) => (
@@ -36,7 +37,8 @@ const Skills = () => {
         <div className="skills-info">
           <SkillsInfoCard
             heading={selectedSkill.title}
-            skills={selectedSkill.skills}
+            // skills={selectedSkill.skills}
+            info={selectedSkill.info}
           />
         </div>
       </div>

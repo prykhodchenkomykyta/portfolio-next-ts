@@ -17,7 +17,7 @@ const ContactMe: React.FC = () => {
           />
           <ContactInfoCard
             iconUrl="/assets/instagram-icon.png"
-            text="Посилання на соцмережу чи куди"
+            text="@bogdan"
           />
         </div>
         <div style={{ flex: 1 }}>

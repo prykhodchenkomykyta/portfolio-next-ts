@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
                 Зв'язатися зі мною
               </Link>
             </li>
-            <button className="contact-btn">Hire Me</button>
+            <button className="contact-btn">Отримати консультацію</button>
           </ul>
           <button type="button" className="menu-btn" onClick={toggleMenu}>
             {isOpenMenu ? <CloseOutlinedIcon /> : <MenuOutlinedIcon />}

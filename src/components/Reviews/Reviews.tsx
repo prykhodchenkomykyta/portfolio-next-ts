@@ -31,10 +31,10 @@ const Reviews: React.FC = () => {
   };
 
   return (
-    <section id="reviews" className="experience-container">
-      <h5>Work Experience</h5>
+    <section id="reviews" className="reviews-container">
+      <h5>Відгуки</h5>
 
-      <div className="experience-content">
+      <div className="reviews-content">
         <div className="arrow-right" onClick={slideRight}>
           <ArrowForwardOutlinedIcon />
         </div>

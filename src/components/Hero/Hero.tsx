@@ -25,9 +25,9 @@ const Hero: React.FC = () => {
           </div>
           <Image
             width={500}
-            height={500}
-            style={{ width: "30rem", height: "25rem" }}
+            height={400}
             alt="Avatar"
+            style={{ borderRadius: "10px" }}
             src="/assets/hero.jpg"
           ></Image>
         </div>

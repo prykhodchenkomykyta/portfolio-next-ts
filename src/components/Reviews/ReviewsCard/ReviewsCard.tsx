@@ -2,20 +2,20 @@ import "./ReviewsCard.css";
 
 interface ReviewsDetails {
   title: string;
-  date: string;
-  responsibilities: string[];
+  info: string;
+  // responsibilities: string[];
 }
 const ReviewsCard: React.FC<{ details: ReviewsDetails }> = ({ details }) => {
   return (
     <div className="reviews-card">
       <h6>{details.title}</h6>
-      <div className="work-duration">{details.date}</div>
+      <div className="info">{details.info}</div>
 
-      <ul>
+      {/* <ul>
         {details.responsibilities.map((item) => (
           <li key={item}>{item}</li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 };

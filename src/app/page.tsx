@@ -6,6 +6,7 @@ import Skills from "@/components/Skills/Skills";
 import Reviews from "@/components/Reviews/Reviews";
 import ContactMe from "@/components/ContactMe/ContactMe";
 import Footer from "@/components/Footer/Footer";
+import GetConsult from "@/components/GetConsult/GetConsult";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <div className="container">
         <Hero />
         <Skills />
+        <GetConsult />
         <Reviews />
         <ContactMe />
       </div>
