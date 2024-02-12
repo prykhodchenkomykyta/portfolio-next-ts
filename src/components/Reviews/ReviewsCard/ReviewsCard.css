@@ -1,5 +1,4 @@
 .reviews-card {
-  background: rgba(39, 72, 144, 0.851);
   border-radius: 0.65rem;
   border: 1.5px solid #6751b9;
   padding: 1.5rem;
@@ -16,7 +15,7 @@
   display: inline-block;
   font-size: 1rem;
   font-weight: 400;
-  background: rgba(44, 82, 163, 0.851);
+  background: rgba(39, 72, 144, 0.851);
   border-radius: 0.3rem;
   padding: 0.4rem 0.6rem;
   margin-bottom: 1.3rem;

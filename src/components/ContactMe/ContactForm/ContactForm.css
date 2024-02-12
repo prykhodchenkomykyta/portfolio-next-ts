@@ -17,7 +17,7 @@ form input, form textarea {
   width: 100%;
   font-size: 0.9rem;
   color: #fff;
-  background: rgba(44, 82, 163, 0.851);
+  background: #0A192F;
   border-radius: 0.6rem;
   border: 1.5px solid #6751b9;
   padding: 1rem;
@@ -36,7 +36,6 @@ form button {
 }
 
 form button:hover {
-  color: #a892fe;
   background: transparent;
 }
 
