@@ -82,7 +82,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen, toggleMenu }) => {
                 offset={-120}
                 duration={500}
               >
-                Зв'язатися зі мною
+                Зв&apos;язатися зі мною
               </ScrollLink>
             </li>
             <ScrollLink

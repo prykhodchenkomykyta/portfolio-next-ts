@@ -7,7 +7,7 @@ const ContactMe: React.FC = () => {
     <section id="contact-me" className="contact-container">
       <h5>
         Залишайте свій контакт у будь-яких месенджерах/соцмережах або номер
-        мобільного телефону, я зв'яжусь з вами якнайшвидше
+        мобільного телефону, я зв&apos;яжусь з вами якнайшвидше
       </h5>
       <div className="contact-content">
         <div style={{ flex: 1 }}>

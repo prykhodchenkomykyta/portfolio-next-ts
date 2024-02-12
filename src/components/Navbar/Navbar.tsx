@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
                 offset={-120}
                 duration={500}
               >
-                Зв'язатися зі мною
+                Зв&apos;язатися зі мною
               </ScrollLink>
             </li>
             <ScrollLink
